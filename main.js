@@ -2,6 +2,10 @@ let [seconds, minutes, hours] = [0, 0, 0];
 let displayTime = document.getElementById("displayTime");
 let timer = null;
 
+let stopEL = document.getElementById("stop");
+let startEL = document.getElementById("start");
+let resetEL = document.getElementById("reset");
+
 function stopwatch() {
   seconds++;
   if (seconds == 60) {
@@ -42,3 +46,6 @@ function watchReset() {
   [seconds, minutes, hours] = [0, 0, 0];
   displayTime.innerHTML = "00:00:00";
 }
+startEL.addEventListener("click", watchstart);
+stopEL.addEventListener("click", watchstop);
+resetEL.addEventListener("click", watchReset);
