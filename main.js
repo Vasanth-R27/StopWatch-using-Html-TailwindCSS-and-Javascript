@@ -12,7 +12,6 @@ function stopwatch() {
       hours++;
     }
   }
-
   //   to display or add the extra zero while time starts
   let h = hours < 10 ? "0" + hours : hours;
   let m = minutes < 10 ? "0" + minutes : minutes;
@@ -23,7 +22,6 @@ function stopwatch() {
 }
 
 // To excute the above stopwatch function for everysecond to the increase the value of one second for everytime, so using the JS timeInterval
-
 // watchStart
 function watchstart() {
   if (timer !== null) {
